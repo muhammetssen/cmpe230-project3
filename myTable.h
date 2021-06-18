@@ -11,13 +11,16 @@ class MyTable : public QTableWidget
 public:
     vector<QString> wantedCurrencies;
         vector<QString> topLabels;
+        vector<QString> coinIDs;
 
     MyTable(vector<QString> wantedCurrencies);
 public slots:
+    void nameToId(QNetworkReply *coinList);
     void insertData(QNetworkReply *reply);
 
 private:
     QTableWidget *table;
     QNetworkAccessManager *manager;
+
 
 };

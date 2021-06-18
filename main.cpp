@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     QGridLayout *centralLayout = new QGridLayout(centralWidget);
     MyTable *m = new MyTable(givens);
     centralLayout->addWidget(m);
-    window.resize(420, 300);
+    window.resize(620, 400);
     window.show();
     return a.exec();
 }
